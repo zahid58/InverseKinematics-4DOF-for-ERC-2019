@@ -1,7 +1,8 @@
 # InverseKinematicsERC19
-using FABRIK2D arduino library for applying 4-DOF inverse kinematics
+using FABRIK2D arduino library for applying 4-DOF inverse kinematics in Robotic Arm made using servo motors.
 # References - Fabrik2D
 https://github.com/henriksod/Fabrik2DArduino
+
 Read the ReadMe of Fabrik2D.
 # some instructions
 The main code is in armCodesInvKin/servo/servo.ino Run it with Arduino.
