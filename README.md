@@ -14,5 +14,6 @@ in serial monitor, you are supposed to provide "x,y,z,tool_angle" hit enter. It 
 ![](https://github.com/iut-160041010/InverseKinematicsERC19/blob/master/Applying%20Inverse%20Kinematics/Slide4.JPG)
 ![](https://github.com/iut-160041010/InverseKinematicsERC19/blob/master/Applying%20Inverse%20Kinematics/Slide5.JPG)
 ![](https://github.com/iut-160041010/InverseKinematicsERC19/blob/master/Applying%20Inverse%20Kinematics/Slide6.JPG)
+when we apply angles (90,90,90,90) they point straight up. When we apply angles we got for (100,100,0,-72)[x,y,z,tool_angle]  which are (0,91,27,0) we reach somewhere close to (100,100,0)(x,y,z). The offset is because of setting the motors incorrectly and excessive load on the servo motors.
 ![](https://github.com/iut-160041010/InverseKinematicsERC19/blob/master/Applying%20Inverse%20Kinematics/Slide7.JPG)
 
