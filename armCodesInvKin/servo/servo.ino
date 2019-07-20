@@ -105,8 +105,8 @@ double rad2deg(int rad){
 
 void resetServos(){
   
-  //base.write(90);
-  //delay(200);
+  base.write(90);
+  delay(200);
   
   shoulder.write(90);
   delay(200);
