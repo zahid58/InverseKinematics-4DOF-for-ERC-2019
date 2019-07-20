@@ -1,0 +1,44 @@
+void printTitles(){
+  Serial.print("ang0");
+  Serial.print("\t");
+  Serial.print("ang1");
+  Serial.print("\t");
+  Serial.print("ang2");
+  Serial.print("\t");
+  Serial.print("x0");
+  Serial.print("\t");
+  Serial.print("y0");
+  Serial.print("\t");
+  Serial.print("x1");
+  Serial.print("\t");
+  Serial.print("y1");
+  Serial.print("\t");
+  Serial.print("x2");
+  Serial.print("\t");
+  Serial.print("y2");
+  Serial.print("\t");
+  Serial.print("x3");
+  Serial.print("\t");
+  Serial.print("y3");
+  Serial.print("\t");
+  Serial.println("angB");
+}
+
+void printEveryJointCoord(){
+    Serial.print("\t");
+    Serial.print(fabrik2D.getX(0));
+    Serial.print("\t");
+    Serial.print(fabrik2D.getY(0));
+    Serial.print("\t");
+    Serial.print(fabrik2D.getX(1));
+    Serial.print("\t");
+    Serial.print(fabrik2D.getY(1));
+    Serial.print("\t");
+    Serial.print(fabrik2D.getX(2));
+    Serial.print("\t");
+    Serial.print(fabrik2D.getY(2));
+    Serial.print("\t");
+    Serial.print(fabrik2D.getX(3));
+    Serial.print("\t");
+    Serial.print(fabrik2D.getY(3));
+}

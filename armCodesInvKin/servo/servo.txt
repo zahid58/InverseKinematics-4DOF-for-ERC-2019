@@ -1,0 +1,39 @@
+
+void gotocordinates(int x, int y, int z, int phai)
+{
+  float theta1, theta2, theta3, theta4;
+  //now we apply inverse kinematics to find our desired angles
+  double phi = deg2rad(phai);
+  double wx = x - a3*cos(phi);
+  double wy = y - a3*sin(phi);
+  double delta = sq(wx) + sq(wy);
+  double c2 = (delta - sq(a1) - sq(a2) ) / (2*a1*a2);
+  //if(1<sq(c2))return;
+  double s2 = sqrt(1 - sq(c2) );
+  Serial.println("---------");
+  Serial.println(cos(140));
+  Serial.println( s2 );
+  Serial.println( c2 );
+  Serial.println("--------");
+  theta3 = atan2(s2,c2); ///////////
+
+  double s1 = ((a1+a2*c2)*wy - a2*s2*wx)/delta;
+  double c1 = ((a1+a2*c2)*wx + a2*s2*wy)/delta;
+ // if(c1==0)return;
+  theta2 = atan2(s1,c1);
+ // if(x==0)return;
+  theta1 = atan2(z,x);
+
+  theta1 = rad2deg(theta1);
+  theta2 = rad2deg(theta2);
+  theta3 = rad2deg(theta3);
+  
+  theta4 = phai-theta2-theta3;
+  Serial.println(theta1);
+    Serial.println(theta2);
+      Serial.println(theta3);
+        Serial.println(theta4);
+  //gotoangles(theta1,theta2,theta3,theta4);
+}
+
+
