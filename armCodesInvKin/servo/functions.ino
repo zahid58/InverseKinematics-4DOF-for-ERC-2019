@@ -49,7 +49,7 @@ void gotoangles(int theta1,int theta2,int theta3,int theta4){
       {
 
        moveBase(i);
-        delay(5);
+        delay(20);
       }//end for CurrentAngle.
 
     }//end if Angle_B > CurrentAngle.
@@ -63,7 +63,7 @@ void gotoangles(int theta1,int theta2,int theta3,int theta4){
       {
 
         moveBase(i);
-        delay(5);
+        delay(20);
       }//end for CurrentAngle.
     }//end else.
 
@@ -81,7 +81,7 @@ void gotoangles(int theta1,int theta2,int theta3,int theta4){
       {
 
        moveShoulder(i);
-        delay(5);
+        delay(20);
       }//end for CurrentAngle.
 
     }//end if Angle > CurrentAngle.
@@ -95,7 +95,7 @@ void gotoangles(int theta1,int theta2,int theta3,int theta4){
       {
 
         moveShoulder();
-        delay(5);
+        delay(20);
       }//end for CurrentAngle.
     }//end else.
 
@@ -112,7 +112,7 @@ void gotoangles(int theta1,int theta2,int theta3,int theta4){
       {
 
        moveElbow(i);
-        delay(5);
+        delay(20);
       }//end for CurrentAngle.
 
     }//end if Angle > CurrentAngle.
@@ -126,7 +126,7 @@ void gotoangles(int theta1,int theta2,int theta3,int theta4){
       {
 
         moveElbow(i);
-        delay(5);
+        delay(20);
       }//end for CurrentAngle.
     }//end else.
 
@@ -143,7 +143,7 @@ void gotoangles(int theta1,int theta2,int theta3,int theta4){
       {
 
         moveWrist(i);
-        delay(5);
+        delay(20);
       }//end for CurrentAngle.
 
     }//end if Angle > CurrentAngle.
@@ -157,7 +157,7 @@ void gotoangles(int theta1,int theta2,int theta3,int theta4){
       {
 
         wrist.write(i);
-        delay(5);
+        delay(20);
       }//end for CurrentAngle.
     }//end else.
 
